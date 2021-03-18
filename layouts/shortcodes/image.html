@@ -1,0 +1,7 @@
+{{ if .IsNamedParams }}
+<picture>
+  <source srcset="{{.Get "src" }}.webp" alt="{{.Get "alt" }}" title="{{.Get "alt" }}" type="image/webp">
+  <source srcset="{{.Get "src" }}.jpg" alt="{{.Get "alt" }}" title="{{.Get "alt" }}" type="image/pjpg"> 
+  <img src="{{.Get "src" }}.jpg" alt="{{.Get "alt" }}">
+</picture>
+{{ end }}
